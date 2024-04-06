@@ -1,0 +1,81 @@
+<html>
+<title> Forms in html </title>
+<body bgcolor="lightyellow" text="brown">
+	<h1 align="center"> Registration form </h1>
+	<form name="regform">
+		<table align="center" width="50%" border="2" cellpadding="5"> 
+	   		<tr>
+	   			<td>Enter Full Name 
+	 	  		<td align="center" width="30">: 	
+	 	  		<td><input type="text" name="txtFname" placeholder="Full Name">
+	   		<tr>
+	   			<td>Password
+	  	   		<td align="center">:
+	  	   		<td><input type="password" name="txtPswd" placeholder="Password">
+	   		<tr>
+	   			<td>Retype Password
+	  	   		<td align="center">:
+	  	   		<td><input type="password" name="txtRTPswd" placeholder="Retype Pswd">
+      		<tr>
+      			<td>Select Gender
+      	 		<td align="center">:
+	  	    	<td> Male:<input type="radio" value="M" name="optGender" checked>
+	  	        &nbsp;Female:<input type="radio" value="F" name="optGender">
+	   		<tr>
+	   			<td>Qualification:
+	   			<td align="center">:
+	  	   		<td> SSLC: <input type="checkbox" value="sslc" name="optQual" checked>
+	  	   		&nbsp; PUC:<input type="checkbox" value="puc" name="optQual">
+ 		   		&nbsp; UG<input type="checkbox" value="UG" name="optQual" >
+	 
+	   		<tr>
+	   			<td>State
+	   			<td align="center">:
+	  	   		<td>
+	  	   			<select name="chState">
+	  	   	 			<option value="KA" selected>Karnataka </option>
+	  	   	 			<option value="MH">Maharastra </option>
+	  	   	 			<option value="DL" >Delhi </option>
+	  	   	 		</select>
+			<tr>
+				<td>Languages Known
+           		<td align="center">:
+           		<td>
+           			<select name="chLang" multiple>
+	  	   				<option value="KA">Kannada </option>
+	  	   				<option value="EN" selected>English </option>
+	  	   				<option value="HI">Hindi </option>
+	  	   			</select>
+			<tr>
+				<td> Address
+			 	<td align="center">:
+          		<td>
+          			<textarea cols="45" rows="6">Address</textarea>
+   			<tr>
+   				<td> Upload Resume
+   		 		<td align="center">:
+          		<td>
+          			<input type="file" name="fileResume">
+			<tr>
+				<td> Mobile No
+			 	<td align="center">:
+          		<td>
+          		    <input type="number" name="txtMobile">
+			<tr>
+				<td> Email 
+				<td align="center">:
+          		<td>
+          		    <input type="email" name="txtEmail">
+		    <tr>
+		   		<td> Birth Date
+			 	<td align="center">:
+          		<td> 
+          			<input type="date" name="txtDOB">
+ 		    <tr> 
+ 		    	<td colspan="3" align="center">  
+                <input type="submit" name="btnSubmit" value="Register">
+	       		<input type="reset" name="btnReset" value="Clear"> 
+	  	</table>
+	</form>
+</body>
+</html>
